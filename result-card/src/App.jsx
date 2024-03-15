@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import data from '../data.json';
 
 function App() {

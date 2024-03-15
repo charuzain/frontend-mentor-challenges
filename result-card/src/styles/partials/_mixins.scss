@@ -1,0 +1,22 @@
+@use './variables' as *;
+
+@mixin tablet-and-desktop {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+
+@mixin font-body {
+  font: $font-mobile-body;
+  font-size: 3rem;
+  @include tablet-and-desktop {
+    font: $font-tablet-body;
+  }
+}

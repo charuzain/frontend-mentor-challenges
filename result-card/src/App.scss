@@ -1,0 +1,19 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid red;
+} */
+@use './styles/partials/variables' as *;
+@use './styles/partials/typography' as *;
+@use './styles/partials/mixins' as *;
+// @use './styles/partials/resets';
+
+
+
+body {
+    font-family: 'Hanken Grotesk', Arial, sans-serif;
+      @include font-body;
+  
+}
