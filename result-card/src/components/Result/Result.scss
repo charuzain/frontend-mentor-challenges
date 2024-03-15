@@ -1,0 +1,80 @@
+@use '../../styles/partials/variables' as *;
+
+.result {
+  // border:2px solid red;
+  background: linear-gradient(180deg, #7755ff 0%, #6943ff 0.01%, #2f2ce9 100%);
+  box-shadow: 0px 30px 60px 0px hsla(224, 82%, 58%, 0.15);
+  border-radius: 0 0 32px 32px;
+
+  &__wrapper {
+    border: 2px solid green;
+    margin: 0 1.6rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  &__title {
+    color: $neutral-light-lavender;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 23.45px;
+    text-align: center;
+  }
+
+  &__container {
+    background: linear-gradient(
+      180deg,
+      #4d21c9 0%,
+      rgba(37, 33, 201, 0) 100%,
+      rgba(37, 33, 201, 0) 100%
+    );
+
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    gap: 1rem;
+  }
+
+  &__score {
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 72px;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 1);
+  }
+
+  &__outof {
+    color: hsla(241, 100%, 89%, 1);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 20.85px;
+  }
+
+  &__remarks {
+    color: hsla(0, 0%, 100%, 1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  &__summary {
+    color: hsla(241, 100%, 89%, 1);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}

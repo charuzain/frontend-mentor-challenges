@@ -1,18 +1,20 @@
-
+import './Result.scss';
 const Result = () => {
   return (
-    <div>
-      <h2>Your result</h2>
-      <div>
-        <h1>76</h1>
-        <p>of 100</p>
+    <div className="result">
+      <div className="result__wrapper">
+        <h2 className="result__title">Your result</h2>
+        <div className="result__container">
+          <h1 className='result__score'>76</h1>
+          <p className='result__outof'>of 100</p>
+        </div>
+        <p className='result__remarks'>Great</p>
+        <p className='result__summary'>
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
       </div>
-      <p>Great</p>
-      <p>
-        You scored higher than 65% of the people who have taken these tests.
-      </p>
     </div>
   );
-}
+};
 
-export default Result
+export default Result;
