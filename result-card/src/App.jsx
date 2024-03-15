@@ -2,6 +2,7 @@ import './App.scss';
 import data from '../data.json';
 import Result from './components/Result/Result';
 import SummaryListItem from './components/SummaryListItem/SummaryListItem';
+import icon from './assets/icons/icon-memory.svg'
 
 function App() {
   console.log(data);
