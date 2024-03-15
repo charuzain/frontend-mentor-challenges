@@ -26,7 +26,7 @@ function App() {
             );
           })}
         </ul>
-        <button>Continue</button>
+        <button className='btn'>Continue</button>
       </section>
     </main>
   );

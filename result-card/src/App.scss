@@ -13,7 +13,7 @@ body {
         display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    
+
   &__heading {
     color: hsla(223, 30%, 27%, 1);
     font-size: 1.125rem;
@@ -30,5 +30,19 @@ body {
     gap: 1rem;
     justify-content: center;
   }
+
+}
+
+.btn{
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 0;
+  background-color:rgba(48, 59, 89, 1);
+font-size: 18px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0px;
+color: rgba(255, 255, 255, 1);
+
 
 }
