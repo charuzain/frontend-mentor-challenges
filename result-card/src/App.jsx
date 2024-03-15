@@ -2,7 +2,7 @@ import './App.scss';
 import data from '../data.json';
 import Result from './components/Result/Result';
 import SummaryListItem from './components/SummaryListItem/SummaryListItem';
-import icon from './assets/icons/icon-memory.svg'
+// import icon from './assets/icons/icon-memory.svg'
 
 function App() {
   console.log(data);
@@ -10,11 +10,24 @@ function App() {
   return (
     <main>
       <Result />
-      <h2>Summary</h2>
-      {data.map((item , index) => {
-        return <SummaryListItem key={index} category={item.category} score={item.score} icon={item.icon}/>;
-      })}
-      <button>Continue</button>
+      <section className="summary-card">
+        <h2 className="summary-card__heading">Summary</h2>
+        <ul className="summary-card__list">
+          {data.map((item, index) => {
+            return (
+              <SummaryListItem
+                key={index}
+                category={item.category}
+                score={item.score}
+                icon={item.icon}
+                color={item.color}
+                backgroundColor={item.backgroundColor}
+              />
+            );
+          })}
+        </ul>
+        <button>Continue</button>
+      </section>
     </main>
   );
 }

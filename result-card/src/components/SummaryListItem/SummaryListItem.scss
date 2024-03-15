@@ -1,17 +1,38 @@
 @use '../../styles/partials/variables' as *;
 
-.summary{
-  border:2px solid yellow;
+.summary {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
 
-  &__content{
+  &__content {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.8rem;
+  }
+
+  &__category {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.3125rem;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  &__marks {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: rgba(48, 59, 89, 1);
+  }
+
+   &__total {
+    opacity: 50%;
+   
   }
 }
