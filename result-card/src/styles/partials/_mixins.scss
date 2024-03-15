@@ -15,7 +15,6 @@
 
 @mixin font-body {
   font: $font-mobile-body;
-  font-size: 3rem;
   @include tablet-and-desktop {
     font: $font-tablet-body;
   }
