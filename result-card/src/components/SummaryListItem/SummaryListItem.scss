@@ -1,0 +1,17 @@
+@use '../../styles/partials/variables' as *;
+
+.summary{
+  border:2px solid yellow;
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: .75rem;
+
+  &__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
