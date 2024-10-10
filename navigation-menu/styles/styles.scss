@@ -11,35 +11,133 @@
 // - Medium Gray: hsl(0, 0%, 41%)
 // - Almost Black: hsl(0, 0%, 8%)
 
-// ## Typography
 
-// ### Body Copy
 
-// - Font size (paragraph): 18px
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
 
-// ### Font
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
 
-// - Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
-// - Weights: 500, 700
-
-*{
-  padding:0;
-  margin:0;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
-a{
-  text-decoration: none;
-  color:unset;
 
+body {
+  font-family: Epilogue, 'sans-serif';
+  color: hsl(0, 0%, 8%);
+  font-weight: 500;
 }
-li{
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+li {
   list-style: none;
 }
 
-p{
-  font-size: 1.125rem;
+img {
+  display: block;
 }
 
-body{
-  font-family: Epilogue, 'sans-serif';
+.nav {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+
+  &__menu-icon {
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: none;
+  }
+
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.hero {
+  // border: 2px solid black;
+
+  &__image {
+    width: 100%;
+  }
+
+  &__desktop {
+    display: none;
+  }
+
+  &__content {
+    padding: 1rem 1.5rem;
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  &__description {
+    color: hsl(0, 0%, 41%);
+    text-align: left;
+    line-height: 1.4;
+  }
+
+  &__link {
+    // border: 2px solid black;
+    padding: 1rem 1.5rem;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    border-radius: 1rem;
+  }
+
+  &__clients {
+    // border: 2px solid red;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    max-width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  &__client {
+    flex-grow: 1;
+  }
+
+  &__logo {
+    max-width: 100%;
+  }
+}
+
+// - Almost White: hsl(0, 0%, 98%)
+// - Medium Gray: hsl(0, 0%, 41%)
+// - Almost Black: hsl(0, 0%, 8%)
