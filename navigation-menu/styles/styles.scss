@@ -80,6 +80,26 @@ img {
 
   }
 
+  &__nested{
+   flex-direction: column;
+   align-items:flex-start;
+   gap:1rem;
+  }
+
+  &__nested-link{
+    display: flex;
+    gap:1rem;
+
+    &--icon{
+      height:100%;
+    }
+  }
+
+  &__nested-list{
+    margin-bottom:1rem;
+    margin-left:1rem;
+  }
+
   &__list-container{
     display: flex;
     flex-direction: column;
@@ -90,7 +110,6 @@ img {
   &__item{
     display: flex;
     gap:1rem;
-    align-items: center;
   }
 
   &__buttons{
@@ -108,6 +127,18 @@ img {
     border:1px solid black;
     padding:0.6rem 2.5rem;
     border-radius: 10px;
+  }
+
+  &__features{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+
+  }
+
+  &__arrow-img{
+     width: 12px;
+  height: 8px;
   }
 
 }
@@ -204,9 +235,9 @@ img {
   // opacity: 1;
 }
 
-.nav__item img{
-  width: 12px;
-  height: 8px;
+// .nav__item img{
+//   width: 12px;
+//   height: 8px;
   
-}
+// }
 

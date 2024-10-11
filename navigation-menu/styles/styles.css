@@ -53,6 +53,22 @@ img {
   bottom: 0;
   color: hsl(0, 0%, 41%);
 }
+.nav__nested {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.nav__nested-link {
+  display: flex;
+  gap: 1rem;
+}
+.nav__nested-link--icon {
+  height: 100%;
+}
+.nav__nested-list {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
 .nav__list-container {
   display: flex;
   flex-direction: column;
@@ -62,7 +78,6 @@ img {
 .nav__item {
   display: flex;
   gap: 1rem;
-  align-items: center;
 }
 .nav__buttons {
   display: flex;
@@ -76,6 +91,15 @@ img {
   border: 1px solid black;
   padding: 0.6rem 2.5rem;
   border-radius: 10px;
+}
+.nav__features {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nav__arrow-img {
+  width: 12px;
+  height: 8px;
 }
 
 .main {
@@ -148,9 +172,4 @@ img {
 
 .overlay.active {
   visibility: visible;
-}
-
-.nav__item img {
-  width: 12px;
-  height: 8px;
 }/*# sourceMappingURL=styles.css.map */

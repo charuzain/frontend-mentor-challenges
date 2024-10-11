@@ -26,16 +26,56 @@
         </div>
         <div class="nav__list">
           <div class="mobile-menu">
-            <img src="./images/icon-close-menu.svg" alt="close menu" class="mobile-menu__close" />
+            <img
+              src="./images/icon-close-menu.svg"
+              alt="close menu"
+              class="mobile-menu__close"
+            />
           </div>
           <ul class="nav__list-container">
-            <li class="nav__item">
-              <a href="#">Features</a
-              ><img src="./images/icon-arrow-down.svg" alt="Down Arrow" />
+            <li class="nav__item nav__nested">
+              <div class="nav__features">
+                <a href="#">Features</a
+                ><img src="./images/icon-arrow-down.svg" alt="Down Arrow" class="nav__arrow-img down-arrow" />
+              </div>
+              <ul>
+                <li class="nav__nested-list">
+                  <div class="nav__nested-link">
+                    <img src="./images/icon-todo.svg" alt="icon" />
+                    <p>Todo List</p>
+                  </div>
+                </li>
+                <li class="nav__nested-list">
+                  <div class="nav__nested-link">
+                    <img src="./images/icon-calendar.svg" alt="icon" />
+                    <p>Calender</p>
+                  </div>
+                </li>
+                <li class="nav__nested-list">
+                  <div class="nav__nested-link">
+                    <img src="./images/icon-reminders.svg" alt="icon" />
+                    <p>Reminders</p>
+                  </div>
+                </li>
+                <li class="nav__nested-list">
+                  <div class="nav__nested-link">
+                    <img src="./images/icon-planning.svg" alt="icon" class="nav__nested-link--icon" />
+                    <p>Planning</p>
+                  </div>
+                </li>
+              </ul>
             </li>
-            <li class="nav__item">
-              <a href="#">Company</a
-              ><img src="./images/icon-arrow-down.svg" alt="Down Arrow" />
+            <li class="nav__item nav__nested">
+              
+              <div class="nav__features">
+                <a href="#">Company</a
+                ><img src="./images/icon-arrow-down.svg" alt="Down Arrow" class="nav__arrow-img down-arrow" />
+              </div>
+              <ul>
+                <li class="nav__nested-list">History</li>
+                <li class="nav__nested-list">Our Team</li>
+                <li class="nav__nested-list">Blog</li>
+              </ul>
             </li>
             <li class="nav__item"><a href="#">Careers</a></li>
             <li class="nav__item"><a href="#">About</a></li>
