@@ -311,7 +311,6 @@ img {
   align-items: center;
 }
 .nav-desktop__nested {
-  border: 2px solid purple;
   background-color: hsl(0, 0%, 98%);
   padding: 1rem;
   position: absolute;
