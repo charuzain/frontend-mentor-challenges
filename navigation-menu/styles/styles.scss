@@ -1,7 +1,3 @@
-// - Almost White: hsl(0, 0%, 98%)
-// - Medium Gray: hsl(0, 0%, 41%)
-// - Almost Black: hsl(0, 0%, 8%)
-
 @mixin tablet {
   @media screen and (min-width: 768px) {
     @content;
@@ -32,8 +28,8 @@ a {
   color: hsl(0, 0%, 41%);
   cursor: pointer;
 }
-a:hover{
-  color:hsl(0, 0%, 8%)
+a:hover {
+  color: hsl(0, 0%, 8%);
 }
 
 li {
@@ -49,16 +45,9 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5rem;
-  @include tablet(){
+  @include tablet() {
     display: none;
   }
-
-
-  
-
-
-
-
 
   &__menu-icon {
     position: relative;
@@ -126,7 +115,7 @@ img {
 
   &__register {
     padding: 0.6rem 2.5rem;
-    border:1px solid hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
     border-radius: 10px;
   }
 
@@ -247,14 +236,10 @@ img {
     }
   }
 
-  &__link:hover{
+  &__link:hover {
     background-color: hsl(0, 0%, 98%);
-    color:hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
     border: 2px solid hsl(0, 0%, 8%);
-
-    // - Almost White: hsl(0, 0%, 98%)
-// - Medium Gray: hsl(0, 0%, 41%)
-// - Almost Black: hsl(0, 0%, 8%)
   }
 
   &__clients {
@@ -304,71 +289,64 @@ img {
   display: none;
 }
 
-#nested-desktop{
-   display: none; 
+#nested-desktop {
+  display: none;
 }
 
-.nav-desktop{
+.nav-desktop {
   display: none;
-  @include tablet(){
-  display: block;
-  border:2px solid red;
-
+  @include tablet() {
+    display: block;
   }
 
-  &__container{
-    @include tablet(){
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    // border:2px solid red;
-
+  &__container {
+    @include tablet() {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+      // border:2px solid red;
     }
   }
 
-  &__left{
-          display: flex;
-          gap:3rem;
-          align-items: center;
-
+  &__left {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
   }
 
-  &__list-items{
+  &__list-items {
     display: flex;
-    gap:2.5rem;
+    gap: 2.5rem;
     position: relative;
   }
 
-  &__list{
+  &__list {
     display: flex;
-    gap:1rem;
-align-items: center;
-  }
-
-    &__right{
-          // border:2px solid green;
-          display: flex;
-          gap:3rem;
-              justify-content: space-between;
+    gap: 1rem;
     align-items: center;
-
   }
 
-  &__nested{
+  &__right {
+    // border:2px solid green;
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    border:2px solid red;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nested {
+    border: 2px solid purple;
     background-color: hsl(0, 0%, 98%);
     padding: 1rem;
     position: absolute;
   }
 
-  &__nested-item{
+  &__nested-item {
     display: flex;
-    gap:1rem
+    gap: 1rem;
   }
 
-
+  &__nested-list {
+    margin-bottom: 1rem;
+  }
 }
-
