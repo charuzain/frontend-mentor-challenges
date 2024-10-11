@@ -13,31 +13,37 @@
     <title>Dropdown navigation solution</title>
   </head>
   <body>
+    <div id="overlay" class="overlay"></div>
     <header>
       <nav class="nav">
         <div class="nav__logo">
           <img src="./images/logo.svg" alt="Snap Logo" />
         </div>
+
+        <!-- MOBILE MENU -->
         <div class="nav__menu-icon" id="icon-menu">
           <img src="./images/icon-menu.svg" alt="Menu Icon" />
         </div>
         <div class="nav__list">
-          <ul>
-            <li>
+          <div class="mobile-menu">
+            <img src="./images/icon-close-menu.svg" alt="close menu" class="mobile-menu__close" />
+          </div>
+          <ul class="nav__list-container">
+            <li class="nav__item">
               <a href="#">Features</a
               ><img src="./images/icon-arrow-down.svg" alt="Down Arrow" />
             </li>
-            <li>
+            <li class="nav__item">
               <a href="#">Company</a
               ><img src="./images/icon-arrow-down.svg" alt="Down Arrow" />
             </li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">About</a></li>
+            <li class="nav__item"><a href="#">Careers</a></li>
+            <li class="nav__item"><a href="#">About</a></li>
           </ul>
 
-          <div>
-            <a href="#">Login</a>
-            <a href="#">Register</a>
+          <div class="nav__buttons">
+            <a href="#" class="nav__login">Login</a>
+            <a href="#" class="nav__register">Register</a>
           </div>
         </div>
       </nav>
@@ -75,7 +81,7 @@
               class="hero__logo"
           /></a>
         </li>
-              <li class="hero__client">
+        <li class="hero__client">
           <a href="#">
             <img
               src="./images/client-audiophile.svg"
@@ -83,7 +89,7 @@
               class="hero__logo"
           /></a>
         </li>
-           <li class="hero__client">
+        <li class="hero__client">
           <a href="#"
             ><img
               src="./images/client-meet.svg"
@@ -91,7 +97,7 @@
               class="hero__logo"
           /></a>
         </li>
-                <li class="hero__client">
+        <li class="hero__client">
           <a href="#">
             <img
               src="./images/client-maker.svg"
