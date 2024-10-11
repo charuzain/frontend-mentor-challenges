@@ -172,4 +172,8 @@ img {
 
 .overlay.active {
   visibility: visible;
+}
+
+#nested {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
