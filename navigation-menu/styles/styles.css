@@ -88,7 +88,6 @@ img {
   text-align: center;
 }
 .nav__register {
-  border: 1px solid black;
   padding: 0.6rem 2.5rem;
   border-radius: 10px;
 }
@@ -108,12 +107,52 @@ img {
   gap: 2rem;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .main {
+    flex-direction: row;
+    margin: 1rem 5rem;
+    gap: 3rem;
+  }
+}
 
-.hero__image {
-  width: 100%;
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 4rem;
+  }
 }
 .hero__desktop {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__desktop {
+    display: block;
+    width: 100%;
+    order: 2;
+  }
+}
+.hero__image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero__image {
+    display: none;
+  }
+}
+.hero__desktop-image {
+  width: 100%;
+}
+.hero__bottom {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__bottom {
+    order: -2;
+    justify-content: space-between;
+  }
 }
 .hero__content {
   padding: 1rem 1.5rem;
@@ -122,22 +161,53 @@ img {
   gap: 1.5rem;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .hero__content {
+    flex-grow: 2;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .hero__title {
   font-weight: 700;
   font-size: 2rem;
   text-align: left;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__span {
+    display: block;
+    margin-top: 1rem;
+  }
+}
 .hero__description {
   color: hsl(0, 0%, 41%);
   text-align: left;
   line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .hero__description {
+    text-align: left;
+    margin-right: 2.2rem;
+  }
 }
 .hero__link {
   padding: 1rem 1.5rem;
   color: hsl(0, 0%, 98%);
   background-color: hsl(0, 0%, 8%);
   border-radius: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__link {
+    align-self: flex-start;
+    margin-bottom: 2rem;
+  }
 }
 .hero__clients {
   display: flex;
@@ -146,6 +216,12 @@ img {
   max-width: 100%;
   gap: 1rem;
   padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__clients {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 }
 .hero__client {
   flex-grow: 1;
