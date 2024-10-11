@@ -1,3 +1,7 @@
+// - Almost White: hsl(0, 0%, 98%)
+// - Medium Gray: hsl(0, 0%, 41%)
+// - Almost Black: hsl(0, 0%, 8%)
+
 @mixin tablet {
   @media screen and (min-width: 768px) {
     @content;
@@ -25,7 +29,11 @@ body {
 a {
   display: block;
   text-decoration: none;
-  color: unset;
+  color: hsl(0, 0%, 41%);
+  cursor: pointer;
+}
+a:hover{
+  color:hsl(0, 0%, 8%)
 }
 
 li {
@@ -41,6 +49,16 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5rem;
+  @include tablet(){
+    display: none;
+  }
+
+
+  
+
+
+
+
 
   &__menu-icon {
     position: relative;
@@ -108,6 +126,7 @@ img {
 
   &__register {
     padding: 0.6rem 2.5rem;
+    border:1px solid hsl(0, 0%, 8%);
     border-radius: 10px;
   }
 
@@ -228,6 +247,16 @@ img {
     }
   }
 
+  &__link:hover{
+    background-color: hsl(0, 0%, 98%);
+    color:hsl(0, 0%, 8%);
+    border: 2px solid hsl(0, 0%, 8%);
+
+    // - Almost White: hsl(0, 0%, 98%)
+// - Medium Gray: hsl(0, 0%, 41%)
+// - Almost Black: hsl(0, 0%, 8%)
+  }
+
   &__clients {
     display: flex;
     gap: 1rem;
@@ -273,5 +302,73 @@ img {
 
 #nested {
   display: none;
+}
+
+#nested-desktop{
+   display: none; 
+}
+
+.nav-desktop{
+  display: none;
+  @include tablet(){
+  display: block;
+  border:2px solid red;
+
+  }
+
+  &__container{
+    @include tablet(){
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    // border:2px solid red;
+
+    }
+  }
+
+  &__left{
+          display: flex;
+          gap:3rem;
+          align-items: center;
+
+  }
+
+  &__list-items{
+    display: flex;
+    gap:2.5rem;
+    position: relative;
+  }
+
+  &__list{
+    display: flex;
+    gap:1rem;
+align-items: center;
+  }
+
+    &__right{
+          // border:2px solid green;
+          display: flex;
+          gap:3rem;
+              justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__nested{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border:2px solid red;
+    background-color: hsl(0, 0%, 98%);
+    padding: 1rem;
+    position: absolute;
+  }
+
+  &__nested-item{
+    display: flex;
+    gap:1rem
+  }
+
+
 }
 

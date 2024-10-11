@@ -13,7 +13,12 @@ body {
 a {
   display: block;
   text-decoration: none;
-  color: unset;
+  color: hsl(0, 0%, 41%);
+  cursor: pointer;
+}
+
+a:hover {
+  color: hsl(0, 0%, 8%);
 }
 
 li {
@@ -29,6 +34,11 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: none;
+  }
 }
 .nav__menu-icon {
   position: relative;
@@ -89,6 +99,7 @@ img {
 }
 .nav__register {
   padding: 0.6rem 2.5rem;
+  border: 1px solid hsl(0, 0%, 8%);
   border-radius: 10px;
 }
 .nav__features {
@@ -209,6 +220,11 @@ img {
     margin-bottom: 2rem;
   }
 }
+.hero__link:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  border: 2px solid hsl(0, 0%, 8%);
+}
 .hero__clients {
   display: flex;
   gap: 1rem;
@@ -252,4 +268,59 @@ img {
 
 #nested {
   display: none;
+}
+
+#nested-desktop {
+  display: none;
+}
+
+.nav-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav-desktop {
+    display: block;
+    border: 2px solid red;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-desktop__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+}
+.nav-desktop__left {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.nav-desktop__list-items {
+  display: flex;
+  gap: 2.5rem;
+  position: relative;
+}
+.nav-desktop__list {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nav-desktop__right {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-desktop__nested {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 2px solid red;
+  background-color: hsl(0, 0%, 98%);
+  padding: 1rem;
+  position: absolute;
+}
+.nav-desktop__nested-item {
+  display: flex;
+  gap: 1rem;
 }/*# sourceMappingURL=styles.css.map */

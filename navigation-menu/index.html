@@ -15,10 +15,87 @@
   <body>
     <div id="overlay" class="overlay"></div>
     <header>
+      <nav class="nav-desktop">
+        <div class="nav-desktop__container">
+          <div class="nav-desktop__left">
+            <div class="nav__logo">
+              <img src="./images/logo.svg" alt="Snap Logo" />
+            </div>
+
+            <ul class="nav-desktop__list-items">
+              <li class="nav-desktop__list-item">
+                <div class="nav-desktop__list">
+                  <a href="#">Features</a
+                  ><img
+                    src="./images/icon-arrow-down.svg"
+                    alt="Down Arrow"
+                    class="nav__arrow-img desktop-down-arrow"
+                  />
+                </div>
+                <ul id="nested-desktop" class="nav-desktop__nested">
+                  <li class="nav-desktop__nested-list">
+                    <div class="nav-desktop__nested-item">
+                      <img src="./images/icon-todo.svg" alt="icon" />
+                      <p>Todo List</p>
+                    </div>
+                  </li>
+                  <li class="nav-desktop__nested-list">
+                    <div class="nav-desktop__nested-item">
+                      <img src="./images/icon-calendar.svg" alt="icon" />
+                      <p>Calender</p>
+                    </div>
+                  </li>
+                  <li class="nav-desktop__nested-list">
+                    <div class="nav-desktop__nested-item">
+                      <img src="./images/icon-reminders.svg" alt="icon" />
+                      <p>Reminders</p>
+                    </div>
+                  </li>
+                  <li class="nav-desktop__nested-list">
+                    <div class="nav-desktop__nested-item">
+                      <img
+                        src="./images/icon-planning.svg"
+                        alt="icon"
+                        class=""
+                      />
+                      <p>Planning</p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-desktop__list-item">
+                <div class="nav-desktop__list">
+                  <a href="#">Company</a
+                  ><img
+                    src="./images/icon-arrow-down.svg"
+                    alt="Down Arrow"
+                    class="nav__arrow-img desktop-down-arrow"
+                  />
+                </div>
+                <ul class="nav-desktop__nested" id="nested-desktop" >
+                  <li class="">History</li>
+                  <li class="">Our Team</li>
+                  <li class="">Blog</li>
+                </ul>
+              </li>
+              <li class=""><a href="#">Careers</a></li>
+              <li class=""><a href="#">About</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-desktop__right">
+            <a href="#" class="">Login</a>
+            <a href="#" class="nav__register">Register</a>
+          </div>
+        </div>
+      </nav>
+
       <nav class="nav">
         <div class="nav__logo">
           <img src="./images/logo.svg" alt="Snap Logo" />
         </div>
+
+  
 
         <!-- MOBILE MENU -->
         <div class="nav__menu-icon" id="icon-menu">
@@ -119,18 +196,14 @@
       </section>
       <section class="hero__bottom">
         <section class="hero__content">
-          <h1 class="hero__title">Make <span class="hero__span">remote work</span></h1>
+          <h1 class="hero__title">
+            Make <span class="hero__span">remote work</span>
+          </h1>
           <p class="hero__description">
             Get your team in sync, no matter your location.Streamline processes,
             create team rituals, and watch productivity soar.
           </p>
-          <!-- <div class="styled-quote">Lorem ipsum dolor sit amet.</div> -->
-
-          <!-- <section class="quote">
-            <div class="quote__left">"</div>
-            <div>Lorem ipsum dolor sit amet.</div>
-            <div class="quote__right">"</div>
-          </section> -->
+     
 
           <a href="#" class="hero__link">Learn more</a>
         </section>
