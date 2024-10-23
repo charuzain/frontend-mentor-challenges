@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Preview</title>
-  <link rel="stylesheet" href="./output.css">
-</head>
-<body class="bg-primary">
-  <main>
-    <div>
-      <img src="../assets/images/illustration-article.svg" alt="Blog Preview Image">
-    </div>
-    <p>Learning</p>
-    <p>Published 21 Dec 2023</p>
-    <p>HTML & CSS Foundations</p>
-    <p>These languages are the backbone of every website, defining structure, content, and presentation </p>
-    <div>
-      <div>
-        <img src="../assets/images/image-avatar.webp" alt="Greg Hooper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Preview</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-primary h-screen flex justify-center items-center">
+    <main class="bg-light border border-black bg-light rounded-2xl mx-8 max-w-[26.5625rem]">
+      <div class="p-4 rounded-md flex flex-col gap-2 max-w-[22.5rem]">
+        <div>
+          <img
+            src="../assets/images/illustration-article.svg"
+            alt="Blog Preview Image" class="w-full rounded-lg"
+          />
+        </div>
+        <p class="mt-2">
+          <span class="font-medium bg-primary px-3 py-1 rounded-md">Learning</span></p>
+        <p class="text-gray-950">Published 21 Dec 2023</p>
+        <p class="font-extrabold">HTML & CSS Foundations</p>
+        <p class="text-gray500">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation
+        </p>
+        <div class="flex items-center gap-3 mt-4">
+          <div>
+            <img src="../assets/images/image-avatar.webp" alt="Greg Hooper" class="w-10" />
+          </div>
+          <p class="font-extrabold">Greg Hooper</p>
+        </div>
       </div>
-      <p>Greg Hooper</p>
-    </div>
-  </main>
-  
-</body>
+    </main>
+  </body>
 </html>
