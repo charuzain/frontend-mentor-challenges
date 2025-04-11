@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Space Mono';
+  font-display: swap;
+  src: url('./assets/fonts/Space_Mono/SpaceMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  font-display: swap;
+  src: url('./assets/fonts/Space_Mono/SpaceMono-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  font-display: swap;
+  src: url('./assets/fonts/Space_Mono/SpaceMono-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  font-display: swap;
+  src: url('./assets/fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Layout */
+  --width-mobile: 375px;
+  --width-desktop: 1440;
+
+
+  /* selected button  var(--clr-strongCyan); */
+  /* Colours */
+  --clr-strongCyan: hsl(172, 67%, 45%);
+  --clr-veryDarkCyan: hsl(183, 100%, 15%);
+  --clr-darkGrayishCyan: hsl(186, 14%, 43%);
+  --clr-grayishCyan: hsl(184, 14%, 56%);
+  --clr-lightGrayishCyan: hsl(185, 41%, 84%);
+  --clr-veryLightGrayishCyan: hsl(189, 41%, 97%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-hover: hsl(173, 60%, 76%);
+  --clr--disabled: hsl(183, 79%, 24%);
+
+  /* Typography */
+  --font-formInput: 24px;
+  --fw-regular: 700; /* Bold Style */
+
+  /* Fonts */
+  --fs-base: 'Space Mono';
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Tip calculator app|Charu Jain</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./assets/images/logo.svg" alt="Splitter logo" class="logo" />
+    </header>
+    <main class="main">
+      <section>
+        <form id="form">
+          <div class="form-group">
+            <div class="error-container">
+              <label for="bill" class="label">Bill</label>
+              <p class="error" id="bill-error"></p>
+            </div>
+            <div class="input-wrapper">
+              <img
+                src="./assets/images/icon-dollar.svg"
+                alt="Dollar icon"
+                class="input-icon"
+              />
+              <input
+                type="number"
+                name="bill"
+                id="bill"
+                placeholder="0"
+                class="input-field"
+              />
+            </div>
+          </div>
+          <!-- Radio button -->
+          <fieldset>
+            <div class="error-container">
+            <legend class="legend">Select Tip %</legend>
+            <p class="error" id="tip-error">Error</p>
+            </div>
+            <div class="radio-container">
+              <div>
+                <input type="radio" name="tip" id="five" value="5" />
+                <label for="five" class="radio-label">5%</label>
+              </div>
+              <div>
+                <input type="radio" name="tip" id="ten" value="10" />
+                <label for="ten" class="radio-label">10%</label>
+              </div>
+              <div>
+                <input type="radio" name="tip" id="fifteen" value="15" />
+                <label for="fifteen" class="radio-label">15%</label>
+              </div>
+              <div>
+                <input type="radio" name="tip" id="twentyFive" value="25" />
+                <label for="twentyFive" class="radio-label">25%</label>
+              </div>
+              <div>
+                <input type="radio" name="tip" id="fifty" value="50" />
+                <label for="fifty" class="radio-label">50%</label>
+              </div>
+              <div>
+                <input
+                  id="customTip"
+                  type="number"
+                  placeholder="Custom"
+                  class="custom-input"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <div class="error-container">
+              <label for="people" class="label">Number of People</label>
+              <p class="error" id="people-error">Can't be zero</p>
+            </div>
+            <div class="input-wrapper">
+              <img
+                src="./assets/images/icon-person.svg"
+                alt="Person icon"
+                class="input-icon"
+              />
+              <input
+                type="number"
+                name="people"
+                id="people"
+                placeholder="4"
+                class="input-field"
+                required
+                min="0"
+              />
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="result-container">
+        <div>
+          <div class="result-item">
+            <div class="result-text">
+              <span class="result-label">Tip Amount</span>
+              <span class="result-subtext">/ person</span>
+            </div>
+            <span class="result-value" id="tip">$0.00</span>
+          </div>
+          <div class="result-item">
+            <div class="result-text">
+              <span class="result-label">Total</span>
+              <span class="result-subtext">/ person</span>
+            </div>
+            <span class="result-value" id="billTotal">$0.00</span>
+          </div>
+        </div>
+        <button class="btn" id="reset-btn" disabled>Reset</button>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/charuzain">Charu Jain</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
