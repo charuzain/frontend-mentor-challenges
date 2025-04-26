@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import FilterButton from '../FilterButton/FilterButton';
 
-const FilterContainer = () => {
+const FilterContainer = ({ filters, clearFilterHandler }) => {
   return (
-    <div>FilterContainer</div>
-  )
-}
+    <>
+      <div>
+        {filters.map((filter, index) => (
+          <FilterButton key={index} filter={filter} />
+        ))}
+      </div>
+      <button onClick={clearFilterHandler}>Clear</button>
+    </>
+  );
+};
 
-export default FilterContainer
+export default FilterContainer;
