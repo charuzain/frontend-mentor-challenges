@@ -1,13 +1,18 @@
-import React from 'react';
-// import { removeIcon } from '../../../images/icon-remove.svg';
+import styles from '../FilterButton/FilterButton.module.css';
 import removeIcon from '../../../images/icon-remove.svg';
 
-const FilterButton = ({ filter }) => {
+const FilterButton = ({ filter, removeFilterHandler }) => {
   return (
-    <button>
-      <span> {filter}</span>
-      <img src={removeIcon} alt="Remove Icon" className="remove-icon" />
-
+    <button className={styles['filter-btn']}>
+      <span className={styles['filter-name']}> {filter}</span>
+      <div className={styles['icon-box']}>
+        <img
+          src={removeIcon}
+          alt="Remove Icon"
+          className={styles['icon']}
+          onClick={() => removeFilterHandler(filter)}
+        />
+      </div>
     </button>
   );
 };

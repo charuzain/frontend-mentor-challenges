@@ -1,0 +1,29 @@
+.filter-container {
+  /* background-color: red; */
+  display: flex;
+  gap: 1rem;
+  border: 2px solid green;
+  padding: 1rem;
+  max-width: 425px;
+  margin: 0 1.5rem;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+.filter-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.clear-btn {
+  all: unset;
+  cursor: pointer;
+  color: var(--clr-veryDarkGrayishCyan);
+  align-self: center;
+  font-weight: var(--fw-bold);
+  /* border: 2px solid red; */
+}
+.clear-btn:hover {
+  text-decoration: underline;
+}
