@@ -1,0 +1,9 @@
+.keyword {
+  font-weight: var(--fw-bold);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  /* background-color: var(--clr-lightGrayishCyan-1); */
+  color: var(--clr-desaturatedDarkCyan);
+  cursor: pointer;
+  background-color: var(--clr-lightGrayishCyan-2);
+}

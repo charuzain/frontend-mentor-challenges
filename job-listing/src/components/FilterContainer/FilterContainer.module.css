@@ -8,21 +8,24 @@
   margin: 0 1.5rem;
   border-radius: 8px;
   justify-content: center;
+  background-color: white;
 }
 
 .filter-box {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
+  /* border: 1px solid red; */
 }
 
 .clear-btn {
   all: unset;
   cursor: pointer;
-  color: var(--clr-veryDarkGrayishCyan);
+  color: var(  --clr-darkGrayishCya);
   align-self: center;
   font-weight: var(--fw-bold);
   /* border: 2px solid red; */
+  font-weight: var(--fw-bold);
 }
 .clear-btn:hover {
   text-decoration: underline;

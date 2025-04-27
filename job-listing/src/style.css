@@ -56,6 +56,13 @@ h6 {
   isolation: isolate;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  border: 2px solid red;
+  background-color: var(--clr-lightGrayishCyan-1);
+}
 
 .attribution {
   font-size: 13px;

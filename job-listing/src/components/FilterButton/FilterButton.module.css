@@ -8,7 +8,7 @@
   overflow: hidden;
   background-color: var(--clr-lightGrayishCyan-1);
   color: var(--clr-desaturatedDarkCyan);
-  margin-bottom: 0.8rem;
+  background-color: var(  --clr-lightGrayishCyan-2);
 }
 
 .filter-name {
