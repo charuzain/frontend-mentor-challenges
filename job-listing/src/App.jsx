@@ -2,15 +2,25 @@ import FilterContainer from './components/FilterContainer/FilterContainer';
 import Header from './components/Header/Header';
 import JobListingContainer from './components/JobListingContainer/JobListingContainer';
 import jobListing from '../data.json';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const App = () => {
-  const [displayFilter, setDisplayFilter] = useState(true);
   const [filters, setFilters] = useState([]);
+  const [listings, setListings] = useState(jobListing);
 
-  const displayFilterHandler = () => {
-    setDisplayFilter(!displayFilter);
-  };
+  useEffect(() => {
+    const filteredJobs = jobListing.filter((listing) => {
+      const filterTags = [
+        ...listing.languages,
+        ...listing.tools,
+        listing.level,
+        listing.role,
+      ];
+      return filters.every((filter) => filterTags.includes(filter));
+    });
+    setListings(filteredJobs);
+  }, [filters]);
+
   const addFilterHandler = (selectedFilter) => {
     const filtersCopy = filters.map((elem) => elem.toLowerCase());
     if (filtersCopy.includes(selectedFilter.toLowerCase())) {
@@ -43,7 +53,7 @@ const App = () => {
           />
         )}
         <JobListingContainer
-          jobListing={jobListing}
+          listings={listings}
           addFilterHandler={addFilterHandler}
         />
       </main>

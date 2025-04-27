@@ -2,10 +2,10 @@ import React from 'react';
 import Tools from '../Tools/Tools';
 import styles from '../JobListingContainer/JobListingContainer.module.css';
 
-const JobListingContainer = ({ jobListing, addFilterHandler }) => {
+const JobListingContainer = ({ listings, addFilterHandler }) => {
   return (
     <section className={styles['joblist-container']}>
-      {jobListing.map((job) => (
+      {listings.map((job) => (
         <div key={job.id} className={styles['joblist-card']}>
           <div className={styles['logo-container']}>
             <img
