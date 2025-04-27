@@ -7,7 +7,7 @@
   max-width: 425px;
   margin: 0 1.5rem;
   border-radius: 8px;
-  justify-content: center;
+  justify-content: space-between;
   background-color: white;
 }
 
@@ -21,7 +21,7 @@
 .clear-btn {
   all: unset;
   cursor: pointer;
-  color: var(  --clr-darkGrayishCya);
+  color: var(--clr-darkGrayishCya);
   align-self: center;
   font-weight: var(--fw-bold);
   /* border: 2px solid red; */

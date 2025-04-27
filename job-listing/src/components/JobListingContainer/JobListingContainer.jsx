@@ -2,7 +2,7 @@ import React from 'react';
 import Tools from '../Tools/Tools';
 import styles from '../JobListingContainer/JobListingContainer.module.css';
 
-const JobListingContainer = ({ jobListing }) => {
+const JobListingContainer = ({ jobListing, addFilterHandler }) => {
   return (
     <section className={styles['joblist-container']}>
       {jobListing.map((job) => (
@@ -30,13 +30,29 @@ const JobListingContainer = ({ jobListing }) => {
 
           <div className={styles['keyword-container']}>
             {job.languages.map((language, index) => (
-              <p key={index} className={styles['keyword']}>
+              <p
+                key={index}
+                className={styles['keyword']}
+                onClick={() => addFilterHandler(language)}
+              >
                 {language}
               </p>
             ))}
-            <p className={styles['keyword']}>{job.level}</p>
-            <p className={styles['keyword']}>{job.role}</p>
-            {job.tools.length > 0 && <Tools tools={job.tools} />}
+            <p
+              className={styles['keyword']}
+              onClick={() => addFilterHandler(job.level)}
+            >
+              {job.level}
+            </p>
+            <p
+              className={styles['keyword']}
+              onClick={() => addFilterHandler(job.role)}
+            >
+              {job.role}
+            </p>
+            {job.tools.length > 0 && (
+              <Tools tools={job.tools} addFilterHandler={addFilterHandler} />
+            )}
           </div>
         </div>
       ))}

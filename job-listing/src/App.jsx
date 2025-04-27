@@ -6,25 +6,25 @@ import { useState } from 'react';
 
 const App = () => {
   const [displayFilter, setDisplayFilter] = useState(true);
-  const [filters, setFilters] = useState([
-    'frontend',
-    'css',
-    'Javascript',
-    'java',
-    'python',
-    'junior',
-    'spring boot',
-  ]);
+  const [filters, setFilters] = useState([]);
 
   const displayFilterHandler = () => {
     setDisplayFilter(!displayFilter);
+  };
+  const addFilterHandler = (selectedFilter) => {
+    const filtersCopy = filters.map((elem) => elem.toLowerCase());
+    if (filtersCopy.includes(selectedFilter.toLowerCase())) {
+      return;
+    }
+    const newFilters = [...filters, selectedFilter];
+    setFilters(newFilters);
   };
   const clearFilterHandler = () => {
     setFilters([]);
   };
 
   const removeFilterHandler = (filt) => {
-    console.log(filt)
+    console.log(filt);
     const newFilter = filters.filter(
       (e) => e.toLowerCase() !== filt.toLowerCase()
     );
@@ -42,7 +42,10 @@ const App = () => {
             removeFilterHandler={removeFilterHandler}
           />
         )}
-        <JobListingContainer jobListing={jobListing} />
+        <JobListingContainer
+          jobListing={jobListing}
+          addFilterHandler={addFilterHandler}
+        />
       </main>
     </>
   );
