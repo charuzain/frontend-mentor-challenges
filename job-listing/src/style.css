@@ -13,6 +13,9 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: var(--ff-base);
+  min-height: 100vh;
+  border: 2px solid purple;
+  background-color: var(--clr-lightGrayishCyan-1);
 }
 img,
 picture,
@@ -55,13 +58,25 @@ h6 {
 #__next {
   isolation: isolate;
 }
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 4rem; */
+}
 
 main {
   display: flex;
   flex-direction: column;
+  padding-top: 8rem;
   gap: 4rem;
-  border: 2px solid red;
-  background-color: var(--clr-lightGrayishCyan-1);
+  border: 2px solid orange;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  max-width: 425px;
+  margin: 0 1rem;
 }
 
 .attribution {

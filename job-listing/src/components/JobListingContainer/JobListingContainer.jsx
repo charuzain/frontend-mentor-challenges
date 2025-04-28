@@ -6,7 +6,12 @@ const JobListingContainer = ({ listings, addFilterHandler }) => {
   return (
     <section className={styles['joblist-container']}>
       {listings.map((job) => (
-        <div key={job.id} className={styles['joblist-card']}>
+        <div
+          key={job.id}
+          className={`${styles['joblist-card']} ${
+            job.featured ? styles['card-border'] : ''
+          }`}
+        >
           <div className={styles['logo-container']}>
             <img
               src={job.logo}
@@ -16,8 +21,10 @@ const JobListingContainer = ({ listings, addFilterHandler }) => {
           </div>
 
           <div className={styles['job-description']}>
-            <div>
+            <div className={styles['row']}>
               <p className={styles['company-name']}>{job.company} </p>
+              {job.new && <p className={styles['new']}>New!</p>}
+              {job.featured && <p className={styles['featured']}>Featured</p>}
             </div>
             <div className={styles['position']}>{job.position}</div>
             <div className={styles['job-details']}>

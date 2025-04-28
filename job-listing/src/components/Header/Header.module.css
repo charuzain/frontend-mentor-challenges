@@ -3,4 +3,5 @@
   background-image: url('../../../images/bg-header-mobile.svg');
   background-color: var(--clr-desaturatedDarkCyan);
   background-repeat: no-repeat;
+  width: 100%;
 }

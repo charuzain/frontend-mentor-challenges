@@ -1,14 +1,14 @@
 .filter-container {
-  /* background-color: red; */
   display: flex;
   gap: 1rem;
   border: 2px solid green;
   padding: 1rem;
-  max-width: 425px;
-  margin: 0 1.5rem;
   border-radius: 8px;
   justify-content: space-between;
   background-color: white;
+  position: absolute;
+  top: -30px;
+  width: 100%;
 }
 
 .filter-box {
