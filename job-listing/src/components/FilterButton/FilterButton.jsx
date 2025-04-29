@@ -5,16 +5,15 @@ const FilterButton = ({ filter, removeFilterHandler }) => {
   return (
     <button className={styles['filter-btn']}>
       <span className={styles['filter-name']}> {filter}</span>
-      <div className={styles['icon-box']}>
-        <img
-          src={removeIcon}
-          alt="Remove Icon"
-          className={styles['icon']}
-          onClick={() => removeFilterHandler(filter)}
-        />
+      <div
+        className={styles['icon-box']}
+        onClick={() => removeFilterHandler(filter)}
+      >
+        <img src={removeIcon} alt="Remove Icon" className={styles['icon']} />
       </div>
     </button>
   );
+  
 };
 
 export default FilterButton;

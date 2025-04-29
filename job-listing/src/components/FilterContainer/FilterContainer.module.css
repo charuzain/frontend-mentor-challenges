@@ -29,6 +29,7 @@
 }
 .clear-btn:hover {
   text-decoration: underline;
+  color: var(--clr-desaturatedDarkCyan);
 }
 
 @media only screen and (min-width: 1280px) {

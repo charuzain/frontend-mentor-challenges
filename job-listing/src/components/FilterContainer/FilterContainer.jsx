@@ -1,4 +1,3 @@
-import React from 'react';
 import FilterButton from '../FilterButton/FilterButton';
 import styles from '../FilterContainer/FilterContainer.module.css';
 
@@ -10,9 +9,9 @@ const FilterContainer = ({
   return (
     <section className={styles['filter-container']}>
       <div className={styles['filter-box']}>
-        {filters.map((filter, index) => (
+        {filters.map((filter) => (
           <FilterButton
-            key={index}
+            key={filter}
             filter={filter}
             removeFilterHandler={removeFilterHandler}
           />

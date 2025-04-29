@@ -40,6 +40,12 @@
 .position {
   color: var(--clr-veryDarkGrayishCyan);
   font-weight: var(--fw-bold);
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
+}
+.position:hover {
+  color: var(--clr-desaturatedDarkCyan);
+  cursor: pointer;
 }
 .job-description {
   border-bottom: 2px solid var(--clr-lightGrayishCyan-2);
@@ -88,14 +94,17 @@
   align-items: center;
 }
 .keyword {
-  /* border: 1px solid red; */
   font-weight: var(--fw-bold);
   padding: 0.4rem 0.8rem;
   border-radius: 4px;
-  /* background-color: var(--clr-lightGrayishCyan-1); */
   color: var(--clr-desaturatedDarkCyan);
   cursor: pointer;
   background-color: var(--clr-lightGrayishCyan-2);
+}
+
+.keyword:hover {
+  background-color: var(--clr-desaturatedDarkCyan);
+  color: white;
 }
 
 .row {
