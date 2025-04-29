@@ -8,7 +8,11 @@
   overflow: hidden;
   background-color: var(--clr-lightGrayishCyan-1);
   color: var(--clr-desaturatedDarkCyan);
-  background-color: var(  --clr-lightGrayishCyan-2);
+  background-color: var(--clr-lightGrayishCyan-2);
+}
+
+.filter-btn:hover {
+  cursor: pointer;
 }
 
 .filter-name {
@@ -23,6 +27,10 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0.7rem;
+}
+
+.icon-box:hover {
+  background-color: var(--clr-veryDarkGrayishCyan);
 }
 
 .icon {

@@ -1,14 +1,15 @@
 .filter-container {
   display: flex;
   gap: 1rem;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   padding: 1rem;
   border-radius: 8px;
   justify-content: space-between;
   background-color: white;
-  position: absolute;
-  top: -30px;
+  /* position: absolute;
+  top: -30px; */
   width: 100%;
+  box-shadow: var(--shadow);
 }
 
 .filter-box {
@@ -24,9 +25,14 @@
   color: var(--clr-darkGrayishCya);
   align-self: center;
   font-weight: var(--fw-bold);
-  /* border: 2px solid red; */
   font-weight: var(--fw-bold);
 }
 .clear-btn:hover {
   text-decoration: underline;
+}
+
+@media only screen and (min-width: 1280px) {
+  .filter-container {
+    padding: 1.5rem 3rem;
+  }
 }

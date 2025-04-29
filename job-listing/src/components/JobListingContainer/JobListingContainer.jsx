@@ -2,9 +2,13 @@ import React from 'react';
 import Tools from '../Tools/Tools';
 import styles from '../JobListingContainer/JobListingContainer.module.css';
 
-const JobListingContainer = ({ listings, addFilterHandler }) => {
+const JobListingContainer = ({ listings, addFilterHandler, filters }) => {
   return (
-    <section className={styles['joblist-container']}>
+    <section
+      className={`${styles['joblist-container']} ${
+        filters.length == 0 ? styles['container-margin'] : ''
+      }`}
+    >
       {listings.map((job) => (
         <div
           key={job.id}

@@ -55,6 +55,7 @@ const App = () => {
         <JobListingContainer
           listings={listings}
           addFilterHandler={addFilterHandler}
+          filters={filters}
         />
       </main>
     </>

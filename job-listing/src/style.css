@@ -14,7 +14,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: var(--ff-base);
   min-height: 100vh;
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   background-color: var(--clr-lightGrayishCyan-1);
 }
 img,
@@ -69,14 +69,31 @@ h6 {
 main {
   display: flex;
   flex-direction: column;
-  padding-top: 8rem;
+  /* padding-top: 8rem; */
   gap: 4rem;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   position: relative;
   justify-content: center;
   align-items: center;
   max-width: 425px;
   margin: 0 1rem;
+  position: relative;
+  top: -50px;
+}
+/* 
+@media only screen and (min-width: 768px) {
+  main {
+    max-width: 768px;
+    width: 100%;
+  }
+} */
+@media only screen and (min-width: 1280px) {
+  main {
+        max-width: 80%;
+
+    /* max-width: 1280px; */
+    width: 100%;
+  }
 }
 
 .attribution {
